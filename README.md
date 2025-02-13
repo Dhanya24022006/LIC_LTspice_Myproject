@@ -1,1 +1,5 @@
-# LIC_LTspice_Myproject
+# EXPERIMENT 1
+## DC,TRANSIENT AND AC ANALYSIS OF COMMON SOURCE AMPLIFIER USING LTSPICE
+### COMPONENTS:
+n-mosfet(180nm technology node),resistor-1k,voltage source(1.8V,0.9V)),wires.
+### CIRCUIT DAIGRAM:
