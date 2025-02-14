@@ -6,4 +6,4 @@ n-mosfet(180nm technology node),resistor-1k,voltage source(1.8V,0.9V)),wires.
 ![Image](https://github.com/user-attachments/assets/293dee60-46d8-4a96-947e-c5be22458ccd)
 ### PROCEDURE:
 1.Build a common source amplifier circuit using LTspice software.\
-2.
+2.Now set the value for voltage sources and resistors
