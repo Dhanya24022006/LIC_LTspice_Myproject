@@ -24,3 +24,7 @@ n-mosfet(180nm technology node),resistor-1k,voltage source(1.8V,0.9V)),wires.
 17.Here we need to set the value for start frequency,stop frequency and number of points. Also set the type of sweep.\
 18.Simulate the circuit using this command, we will get the frequency response of a circuit.\
 ### CALCULATIONS:
+Power rating is: 100*u*W\
+The gate voltage is: 1.8V\
+The the input DC voltage is: 0.9V
+
