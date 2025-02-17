@@ -10,16 +10,16 @@ The NMOS transistor common-source amplifier is one of the most commonly used con
 2.Transient Analysis: Evaluates the time-domain response.\
 3.AC Analysis: Examines the small-signal behavior and frequency response.
 
-### DC Analysis:\
+### DC Analysis:
 The primary objective of DC analysis is to establish a stable operating point for the MOSFET, ensuring it remains in the saturation region for effective amplification. A MOSFET operates in saturation when the drain-source voltage (V<sub>DS</sub>) exceeds the overdrive voltage (V<sub>OV</sub>), where V<sub>OV</sub>=V<sub>GS</sub>−V<sub>TH</sub>. \
 The drain current is given by:
 I<sub>D</sub>=1/2Kn(V<sub>OV</sub>)<sup>2</sup>\
 The values of V<sub>DS</sub> and I<sub>D</sub> determine the MOSFET’s operating point.
 
-### Transient Analysis:\
+### Transient Analysis:
 Transient analysis evaluates how the amplifier reacts to time-dependent signals, such as pulse inputs or abrupt voltage changes. The response is influenced by the charging and discharging of capacitors, including coupling and bypass capacitors. The amplifier's reaction to sudden input variations is constrained by its time constants, which depend on the circuit’s resistance and capacitance. This analysis is particularly important in high-speed applications, where factors like rise time, fall time, and propagation delay determine the amplifier's effectiveness in handling fast signals.
 
-### AC Analysis:\
+### AC Analysis:
 In AC analysis, the MOSFET is considered a linear small-signal amplifier, where the drain current varies proportionally with small changes in gate voltage:\
 i<sub>D</sub>=g<sub>m</sub>v<sub>gs</sub>
 where g<sub>m</sub> represents the transconductance.\
@@ -95,4 +95,6 @@ Hence Q point= (1.745V, 55.5uA)\
 |--------|--------|--------|
 |1*u*m     |152.7*u*A |1.64V   |
 |--------|--------|--------|
+### Result:
+1.DC Analysis:
 
