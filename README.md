@@ -101,7 +101,11 @@ Hence Q point= (1.745V, 55.5uA)\
 we got I<sub>D</sub>= 55.5uA\
 width = 0.203um\
 Vout= 1.7444V\
-we get DC operating point as (1.7444V, 55.5uA)\
+we get DC operating point as (1.7444V, 55.5uA)
 
 2.Transient Analysis:\
+![Image](https://github.com/user-attachments/assets/f020e431-82b1-4b52-a467-7e57ce214b3d)\
+we got Vout= 1.744V for width of 0.203um\
+And a phase shift of 180 degree.
 
+3.AC Analysis:\
