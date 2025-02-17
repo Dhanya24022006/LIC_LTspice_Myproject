@@ -96,5 +96,6 @@ Hence Q point= (1.745V, 55.5uA)\
 |1*u*m     |152.7*u*A |1.64V   |
 |--------|--------|--------|
 ### Result:
-1.DC Analysis:
+1.DC Analysis:\
+
 
