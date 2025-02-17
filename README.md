@@ -97,5 +97,11 @@ Hence Q point= (1.745V, 55.5uA)\
 |--------|--------|--------|
 ### Result:
 1.DC Analysis:\
+![Image](https://github.com/user-attachments/assets/006a6311-edbe-4cc5-b654-d88e790d2bda)\
+we got I<sub>D</sub>= 55.5uA\
+width = 0.203um\
+Vout= 1.7444V\
+we get DC operating point as (1.7444V, 55.5uA)\
 
+2.Transient Analysis:\
 
