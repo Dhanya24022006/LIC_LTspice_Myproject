@@ -104,7 +104,13 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 
 ![Image](https://github.com/user-attachments/assets/d5e4eb34-eb76-4e90-96b0-064dcc3a7df2)
 
-Here we are getting a gain(A<sub>v</sub>) of -18.3dB.
+Here we are getting a gain(A<sub>v</sub>) of -18.3dB.<br/>
+3db Bandwidth=2.11Ghz
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 18.65dB      | -18.53dB         |
+|Av(in V/V)     | 8.56         | 8.00            |
+
 
 ## Circuit 2:
 
@@ -127,6 +133,20 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub
 
 ## AC Analysis:
 (Repeat the same steps as circuit 1)
+![Image](https://github.com/user-attachments/assets/9bc1c2e9-1abf-4187-a649-62dc92e34579)
+
+Here we have obtained a gain(A<sub>v</sub>) of 19.336dB.
+3db Bandwidth=2.11Ghz
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 18.65dB      | 19.33dB         |
+|Av(in V/V)     | 8.56         | 8.00            |
+
+
+## Circuit 3:
+
+### Circuit Diagram:
+
  
 
 
