@@ -158,6 +158,12 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10029V and I<sub
 
 ## Transient Analysis:
 (Repeat the same steps as circuit 1)
+![Image](https://github.com/user-attachments/assets/bff0e2c3-ff43-4937-b606-bfbf8e1a96c1)
+![Image](https://github.com/user-attachments/assets/c1e04193-2c11-48ed-9c79-28eb9de93e1a)
+
+
+## AC Analysis:
+(Repeat the same steps as circuit 1)
 
 
 
