@@ -65,6 +65,14 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 
 - We got the Operating point as V<sub>out</sub>= 1.10033V and I<sub>D</sub>=0.610004mA
 
+- After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
+
+
+
+From the Output Log we can observe that Vgs= 0.51V , Vth= 0.498V and Vds = 0.701V .<br/>
+It is satisfying the required condition therefore, the transistors lies in saturation region.
+
+
 ## Transient Analysis:
 
 ### Steps to Perform Transient Analysis in LTspice XVII
@@ -129,7 +137,7 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub
 
 - After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
 
-
+![Image](https://github.com/user-attachments/assets/7e33eb5e-f4f4-4710-be58-761c75511382)
 
 From the Output Log we can observe that Vgs= 0.51V , Vth= 0.498V and Vds = 0.701V .<br/>
 It is satisfying the required condition therefore, the transistors lies in saturation region.
