@@ -88,6 +88,7 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 - According to the graph obtained from transient analysis the gain(A<sub>v</sub>) is 8<br/>
    A<sub>v</sub>=V<sub>out</sub>/V<sub>in</sub><br/>
    A<sub>v</sub>=0.856/0.107 = 8
+- We can observe that it has 180 degree Phase shift.
 
 ## AC Analysis:
 
@@ -130,6 +131,8 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub
 (Repeat the same steps as circuit 1)
 ![Image](https://github.com/user-attachments/assets/b7964cb4-64b8-461a-a35f-082c1bd58ea0)
 ![Image](https://github.com/user-attachments/assets/dac27371-2015-437f-8c38-d1ffa0e3fe91)
+According to the graph obtained from transient analysis the gain(A<sub>v</sub>) is 8<br/>
+We can observe that it has 180 degree Phase shift.
 
 ## AC Analysis:
 (Repeat the same steps as circuit 1)
@@ -149,6 +152,11 @@ Here we have obtained a gain(A<sub>v</sub>) of 19.336dB.
 ![Image](https://github.com/user-attachments/assets/4ec09abe-e336-4228-a44a-3323f1554c27)
 
 Here we are replacing the current source by a nmos transistor to improve gain, linearity, and common-mode rejection ratio (CMRR), as well as to allow for a more compact and efficient circuit design.
+Vds = Vgs - Vt ( Vds = Vp = 0.4V )<br/>
+0.4 + 0.36624 = Vg ( since source is grounded )<br/>
+Vbias = Vg = 0.76624V(V<sub>4</sub>) ( Bias voltage at the gate for 3rd n type mosfet)<br/>
+The width and length of the differential pair MOSFETs remain unchanged, while the third MOSFET has a width of 21.684um and a length of 180nm.<br/>
+V<sub>4</sub> = 0.7662V.
 
 ## DC Analysis:
 (Repeat the same steps as circuit 1)
@@ -156,14 +164,29 @@ Here we are replacing the current source by a nmos transistor to improve gain, l
 
 Here we have obtained a operating point as V<sub>out</sub> =  1.10029V and I<sub>D</sub> = 0.610046mA.
 
+- After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
+
+
+From the Output Log we can observe that Vgs= 0.55V , Vth= 0.498V and Vds = 0.7V .<br/>
+It is satisfying the required condition therefore, the transistors lies in saturation region.
+
 ## Transient Analysis:
 (Repeat the same steps as circuit 1)
 ![Image](https://github.com/user-attachments/assets/bff0e2c3-ff43-4937-b606-bfbf8e1a96c1)
 ![Image](https://github.com/user-attachments/assets/c1e04193-2c11-48ed-9c79-28eb9de93e1a)
+According to the graph obtained from transient analysis the gain(A<sub>v</sub>) is 8<br/>
+We can observe that it has 180 degree Phase shift.
 
 
 ## AC Analysis:
 (Repeat the same steps as circuit 1)
+![Image](https://github.com/user-attachments/assets/2aaaad97-20c4-48fc-9539-5df9ceeae487)
+Here we have obtained a gain(A<sub>v</sub>) of 19.43dB.
+3db Bandwidth=2.15Ghz
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 18.65dB      | 19.43dB         |
+|Av(in V/V)     | 8.56         | 8.00            |
 
 
 
