@@ -127,6 +127,14 @@ The resistor is replaced by a current source beacuse it improves performance of 
 
 Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub>D</sub> = 0.61mA
 
+- After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
+
+
+
+From the Output Log we can observe that Vgs= 0.51V , Vth= 0.498V and Vds = 0.701V .<br/>
+It is satisfying the required condition therefore, the transistors lies in saturation region.
+
+
 ## Transient Analysis:
 (Repeat the same steps as circuit 1)
 ![Image](https://github.com/user-attachments/assets/b7964cb4-64b8-461a-a35f-082c1bd58ea0)
@@ -166,8 +174,9 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10029V and I<sub
 
 - After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
 
+![Image](https://github.com/user-attachments/assets/f4262cd1-8e3b-4c8b-a367-f6ca4ccf5791)
 
-From the Output Log we can observe that Vgs= 0.55V , Vth= 0.498V and Vds = 0.7V .<br/>
+From the Output Log we can observe that Vgs= 0.51V , Vth= 0.498V and Vds = 0.701V .<br/>
 It is satisfying the required condition therefore, the transistors lies in saturation region.
 
 ## Transient Analysis:
