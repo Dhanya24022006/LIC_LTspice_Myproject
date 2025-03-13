@@ -115,8 +115,13 @@ Here we have replaced the current source resistor by a independent current sourc
 The resistor is replaced by a current source beacuse it improves performance of the differential amplifier by increasing gain, enhancing linearity, and boosting the common-mode rejection ratio (CMRR). 
 
 ## DC Analysis:
+(Repeat the same steps as circuit 1)
+![Image](https://github.com/user-attachments/assets/02482a26-b1a0-43c1-a2dd-a347f9714f46)
 
-### Steps to Perform DC Analysis in LTspice XVII:
+Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub>D</sub> = 0.61mA
+
+## Transient Analysis:
+(Repeat the same steps as circuit 1)
 
 
 
