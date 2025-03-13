@@ -99,4 +99,5 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 7. Examine the gain and phase plots.
 8. Determine key characteristics such as bandwidth and gain margin.
 
+![Image](https://github.com/user-attachments/assets/d5e4eb34-eb76-4e90-96b0-064dcc3a7df2)
 
