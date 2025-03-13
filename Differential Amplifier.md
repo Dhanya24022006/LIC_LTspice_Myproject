@@ -152,8 +152,14 @@ Here we are replacing the current source by a nmos transistor to improve gain, l
 
 ## DC Analysis:
 (Repeat the same steps as circuit 1)
+![Image](https://github.com/user-attachments/assets/a4809121-74f4-4203-a619-adfec069070b)
 
- 
+Here we have obtained a operating point as V<sub>out</sub> =  1.10029V and I<sub>D</sub> = 0.610046mA.
+
+## Transient Analysis:
+(Repeat the same steps as circuit 1)
+
+
 
 
 
