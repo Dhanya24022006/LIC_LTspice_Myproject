@@ -146,6 +146,12 @@ Here we have obtained a gain(A<sub>v</sub>) of 19.336dB.
 ## Circuit 3:
 
 ### Circuit Diagram:
+![Image](https://github.com/user-attachments/assets/4ec09abe-e336-4228-a44a-3323f1554c27)
+
+Here we are replacing the current source by a nmos transistor to improve gain, linearity, and common-mode rejection ratio (CMRR), as well as to allow for a more compact and efficient circuit design.
+
+## DC Analysis:
+(Repeat the same steps as circuit 1)
 
  
 
