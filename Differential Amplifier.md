@@ -77,6 +77,7 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 7. Click **OK**, and place the generated command on the schematic.
 8. Verify the response and note the phase shift and signal gain.
 ![Image](https://github.com/user-attachments/assets/0d839d46-ac1b-4194-9227-ef2579bb4283)
+![Image](https://github.com/user-attachments/assets/cf370f36-3dfb-407d-b756-86191b19835d)
 
 - According to the calculations the gain(A<sub>v</sub>) is 7.36 <br/>
    A<sub>v</sub>=-g<sub>m</sub>R<sub>D</sub> <br/>
@@ -100,4 +101,9 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 8. Determine key characteristics such as bandwidth and gain margin.
 
 ![Image](https://github.com/user-attachments/assets/d5e4eb34-eb76-4e90-96b0-064dcc3a7df2)
+
+Here we are getting a gain(A<sub>v</sub>) of -18.3dB.
+
+## Circuit 2:
+
 
