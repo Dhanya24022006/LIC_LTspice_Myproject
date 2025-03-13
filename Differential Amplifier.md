@@ -91,7 +91,7 @@ It is satisfying the required condition therefore, the transistors lies in satur
 
 - According to the calculations the gain(A<sub>v</sub>) is 7.36 <br/>
    A<sub>v</sub>=-g<sub>m</sub>R<sub>D</sub> <br/>
-   A<sub>v</sub>=7.36 
+   A<sub>v</sub>=8.56 
 
 - According to the graph obtained from transient analysis the gain(A<sub>v</sub>) is 8<br/>
    A<sub>v</sub>=V<sub>out</sub>/V<sub>in</sub><br/>
