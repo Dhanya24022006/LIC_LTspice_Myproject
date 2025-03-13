@@ -127,6 +127,7 @@ Here we have obtained a operating point as V<sub>out</sub> =  1.10033V and I<sub
 
 ## AC Analysis:
 (Repeat the same steps as circuit 1)
+ 
 
 
 
