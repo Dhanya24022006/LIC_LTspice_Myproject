@@ -51,10 +51,28 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 
 ### Steps:
 1. Build the circuit as per the diagram shown above and set the values of the voltage sources,resistors as per the calculated values.
-2. Next go to SPICE Directive and type .lib <filename>.lib or <filepath>.lib to import the Library file.
-3. After importing the library file name the two mosfet as CMOSN.
-4. Set the channel length value of M<sub>1</sub> as 180nm and  we have to vary the value of the width to get a desired value of I<sub>D</sub> and V<sub>out</sub>
-5. Repeat the same steps with M<sub>2</sub> mosfet.
-6. Now go to 'Edit simulation command' and select 'DC op pnt'.
-7. Next click on run button, you will get a pop up window which gives us information about operating point.It includes the values of V<sub>out</sub> and I<sub>D</sub>.
- 
+2. Next go to **SPICE Directive** and type **.lib filename.lib or .lib filepath.lib** to import the Library file.
+3. Click **OK**, and place the generated command on the schematic.
+4. After importing the library file name the two mosfet as CMOSN.
+5. Set the channel length value of M<sub>1</sub> as 180nm and  we have to vary the value of the width to get a desired value of I<sub>D</sub> and V<sub>out</sub>
+6. Repeat the same steps with M<sub>2</sub> mosfet.
+7. Now go to **Edit simulation command** and select **DC op pnt**.
+8. Click **OK**, and place the generated command on the schematic.
+9. Next click on run button, you will get a pop up window which gives us information about operating point.It includes the values of V<sub>out</sub> and I<sub>D</sub>.
+![Image](https://github.com/user-attachments/assets/8b0b8b80-f0f9-42bf-bb10-ce12d8c2d4a7)
+
+- We got the Operating point as V<sub>out</sub>= 1.10033V and I<sub>D</sub>=0.610004mA
+
+## Transient Analysis:
+
+### Steps:
+1. After setting the operating point, we will give sine wave as the input for both the gate terminals of the mosfet.
+2. Next set the **Amplitude** as 50mV and **Frequency** as 1kHz for both V<sub>2</sub> and V<sub>3</sub>.
+3. You should specify the AC amplitude for each voltage source separately. You have two voltage sources, you can set their AC amplitudes as follows:
+ - First Voltage Source(V<sub>2</sub>): **AC amplitude** = 1
+ - Second Voltage Source(V<sub>3</sub>): **AC amplitude** = -1
+4. Next give **phi[deg]** for V<sub>3</sub> as 180.
+5. Now go to **Edit Simulation cmd** and select **Transient**.
+6. Give **stop time** as per your convenience, here it is 5m.
+7.Click **OK**, and place the generated command on the schematic.
+
