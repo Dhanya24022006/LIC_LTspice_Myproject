@@ -67,7 +67,7 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 
 - After this in "view command" go to " SPICE Output Log " option to check Vgs, Vth ,Vds etc.
 
-
+![Image](https://github.com/user-attachments/assets/8de5af89-5608-44fb-9300-6aa767c28ee1)
 
 From the Output Log we can observe that Vgs= 0.51V , Vth= 0.498V and Vds = 0.701V .<br/>
 It is satisfying the required condition therefore, the transistors lies in saturation region.
@@ -126,7 +126,7 @@ Here we are getting a gain(A<sub>v</sub>) of -18.3dB.<br/>
 ### Circuit Diagram:
 ![Image](https://github.com/user-attachments/assets/200d07fe-0659-446e-ae0a-b839f277eec9)
 
-Here we have replaced the current source resistor by a independent current source with a DC value of 1.22mA.<br/>
+Here we have replaced the current source resistor by a ideal current source with a DC value of 1.22mA.<br/>
 The resistor is replaced by a current source beacuse it improves performance of the differential amplifier by increasing gain, enhancing linearity, and boosting the common-mode rejection ratio (CMRR). 
 
 ## DC Analysis:
@@ -167,7 +167,7 @@ Here we have obtained a gain(A<sub>v</sub>) of 19.336dB.
 ### Circuit Diagram:
 ![Image](https://github.com/user-attachments/assets/4ec09abe-e336-4228-a44a-3323f1554c27)
 
-Here we are replacing the current source by a nmos transistor to improve gain, linearity, and common-mode rejection ratio (CMRR), as well as to allow for a more compact and efficient circuit design.
+Here we are replacing the ideal current source by a active current source(nmos transistor) to improve gain, linearity, and common-mode rejection ratio (CMRR), as well as to allow for a more compact and efficient circuit design.
 Vds = Vgs - Vt ( Vds = Vp = 0.4V )<br/>
 0.4 + 0.36624 = Vg ( since source is grounded )<br/>
 Vbias = Vg = 0.76624V(V<sub>4</sub>) ( Bias voltage at the gate for 3rd n type mosfet)<br/>
@@ -204,6 +204,50 @@ Here we have obtained a gain(A<sub>v</sub>) of 19.43dB.
 |---------------|--------------|-----------------|
 |Av(in dB)      | 18.65dB      | 19.43dB         |
 |Av(in V/V)     | 8.56         | 8.00            |
+
+
+# **Final Result**
+
+| **Parameter** | **Circuit 1** | **Circuit 2** | **Circuit 3** |
+|--------------|--------------|--------------|--------------|
+| **V(out1)**  | 1.1003V  | 1.1003V  | 1.10029V  |
+| **V(out2)**  | 1.1003V  | 1.1003V  | 1.10029V  |
+| **V(vp)** | 0.400141V | 0.400166V | 0.400143V |
+| **Id(M1)** | 0.610004 mA | 0.61 mA | 0.610046 mA |
+| **Id(M2)** | -0.610004 mA | -0.61 mA | -0.610046 mA |
+| **Id(M3) (Tail Current Source)** | Not present | 1.22 mA (set with ideal current source) | 1.22 mA |
+| **Total Tail Current** | 1.22001 mA | 1.22 mA | 1.22009 mA |
+
+# **Inference**
+
+In this experiment, we explored the behavior of a differential amplifier with three different load configurations: resistor, current source, and NMOS. Each configuration affects the amplifier’s performance in unique ways, especially in terms of voltage gain and stability.
+
+## Comparison of Differential Pair Circuits
+
+| Feature               | **Circuit 1**                  | **Circuit 2**                  | **Circuit 3**                  |
+|-----------------------|--------------------------------|--------------------------------|--------------------------------|
+| **Current Source**    | Resistor (0.327k ohms)               | Ideal Current Source (1.22mA) | Active Current Source (NMOS)   |
+| **Practicality**      | Less Practical                | Suitable for AC Analysis       | Realistic for Circuit Design   |
+
+- Circuit 1: A basic differential pair with a resistive current source. It allows for simple analysis but does not offer precise biasing control.
+- Circuit 2: Incorporates an ideal current source, enhancing both biasing accuracy and stability.
+- Circuit 3: Utilizes an active current source with an NMOS, ensuring superior stability and making it the most practical choice for real-world applications.
+Among these, Circuit 3 is the preferred design for practical implementations.
+
+
+1. Voltage Gain: The NMOS configuration provides the highest gain, while the resistor-based setup offers a slightly lower gain. The use of a current source further enhances the gain due to its high output impedance.
+2. Bias Current Stability: In all configurations, the bias current remained stable at approximately 0.61mA, indicating proper circuit biasing.
+3. Common-Mode Voltage (Vocm): The output common-mode voltage remained steady at around 1.1V, aligning with the intended design specifications.
+
+## Conclusion:
+
+The simulation of the MOSFET-based differential amplifier was carried out using three different configurations: resistive current source, ideal current source, and active current source (NMOS). Each configuration exhibited distinct performance characteristics.
+
+- The resistive current source provided a simple implementation but lacked precise biasing and had lower gain due to limited output impedance.
+- The ideal current source improved bias stability and gain by offering a high output impedance.
+- The active current source (NMOS) delivered the best overall performance, ensuring higher gain, better bias stability, and improved common-mode rejection, making it the most practical choice for real-world applications.
+
+Among the three, the NMOS-based active current source is the preferred configuration due to its superior stability, gain, and real-world feasibility.
 
 
 
