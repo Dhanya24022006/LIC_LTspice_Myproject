@@ -1,4 +1,4 @@
-# MOS Differential Amplifier Experiment Report
+# MOSFET Differential Amplifier Experiment Report
 ## Aim:
 Design and analyze the MOS differential amplifier circuit for the following specifications:
 - Suppy Voltage(V<sub>DD</sub>) = 1.8V
@@ -26,4 +26,7 @@ A MOSFET differential amplifier amplifies the difference between two input volta
 - Common-Mode Rejection:The amplifier is designed to minimize or eliminate gain for signals that are present on both input terminals (common-mode signals), which helps to filter out noise. 
 - MOSFETs as Active Devices:Two matched MOSFETs are used, each with a "pull-up" load, and the gate voltage determines the electrical resistance between the source and drain. 
 - Two input terminals and one output terminal:The differential amplifier has two input terminals (inverting and non-inverting) and one output terminal.
+
+## Circuit Diagram:
+
 
