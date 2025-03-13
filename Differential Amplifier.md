@@ -3,7 +3,7 @@
 Design and analyze the MOS differential amplifier circuit for the following specifications:
 - Suppy Voltage(V<sub>DD</sub>) = 1.8V
 - Input Common Mode Voltage(V<sub>icm</sub>) = 0.95V
-- Power Rating(P) <= 2.2mW
+- Power Consumption(P) <= 2.2mW
 - Output Common Mode Voltage(V<sub>ocm</sub>) = 1.1V
 - Differential Amplifier node voltage(V<sub>p</sub>) = 0.4V
 ### Perform
@@ -28,5 +28,33 @@ A MOSFET differential amplifier amplifies the difference between two input volta
 - Two input terminals and one output terminal:The differential amplifier has two input terminals (inverting and non-inverting) and one output terminal.
 
 ## Circuit Diagram:
+![Image](https://github.com/user-attachments/assets/afa41c11-f56b-4891-bfea-b9aed7182d56)
+- Input bias Voltages(V<sub>2</sub> and V<sub>3</sub>= 0.95V): A DC current that flows into or out of the amplifier's input pins to establish a defined operating point, ensuring proper amplification and preventing saturation. 
+- Power Supply(V<sub>1</sub>=1.8V): Provides the necessary DC voltage levels (positive and negative) to bias the MOSFETs, enabling them to operate in the desired amplification region and ensuring proper signal amplification and stability.
+- Output Nodes(V<sub>out1</sub> and V<sub>out2</sub>): The differential output is taken from these two terminals.
+- NMOS Transistors(M<sub>1</sub>)and M<sub>2</sub>):These are the amplifying elements which forms the differential pair.
+- Load Resistors(R<sub>1</sub> and R<sub>2</sub>):Play a crucial role in determining the voltage gain, DC bias, and overall circuit performance by controlling the drain current and voltage swing.
+- Current source resistor(R<sub>3</sub>): Establishing a stable bias current and enabling differential amplification by providing a high impedance at the source terminals.
 
+## Design:
+### Calculations:
+1. I<sub>ss</sub>(Source Current)=P/V<sub>DD</sub> <br/>
+I<sub>ss</sub>=2.2mW/1.8V = 1.22mA
 
+2. R<sub>D</sub>(Load resistor)=V<sub>out</sub>-v<sub>DD</sub>/I<sub>D</sub> <br/>
+R<sub>D</sub>=0.7kV/0.61mA = 1.147k ohms
+
+3. R<sub>ss</sub>(Current source resistor)=V<sub>p</sub>/I<sub>ss</sub> <br/>
+R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
+
+## DC Analysis:
+
+### Steps:
+1. Build the circuit as per the diagram shown above and set the values of the voltage sources,resistors as per the calculated values.
+2. Next go to SPICE Directive and type .lib <filename>.lib or <filepath>.lib to import the Library file.
+3. After importing the library file name the two mosfet as CMOSN.
+4. Set the channel length value of M<sub>1</sub> as 180nm and  we have to vary the value of the width to get a desired value of I<sub>D</sub> and V<sub>out</sub>
+5. Repeat the same steps with M<sub>2</sub> mosfet.
+6. Now go to 'Edit simulation command' and select 'DC op pnt'.
+7. Next click on run button, you will get a pop up window which gives us information about operating point.It includes the values of V<sub>out</sub> and I<sub>D</sub>.
+ 
