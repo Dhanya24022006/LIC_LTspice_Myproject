@@ -27,7 +27,9 @@ A MOSFET differential amplifier amplifies the difference between two input volta
 - MOSFETs as Active Devices:Two matched MOSFETs are used, each with a "pull-up" load, and the gate voltage determines the electrical resistance between the source and drain. 
 - Two input terminals and one output terminal:The differential amplifier has two input terminals (inverting and non-inverting) and one output terminal.
 
-## Circuit Diagram:
+## Circuit 1:
+
+### Circuit Diagram:
 ![Image](https://github.com/user-attachments/assets/afa41c11-f56b-4891-bfea-b9aed7182d56)
 - Input bias Voltages(V<sub>2</sub> and V<sub>3</sub>= 0.95V): A DC current that flows into or out of the amplifier's input pins to establish a defined operating point, ensuring proper amplification and preventing saturation. 
 - Power Supply(V<sub>1</sub>=1.8V): Provides the necessary DC voltage levels (positive and negative) to bias the MOSFETs, enabling them to operate in the desired amplification region and ensuring proper signal amplification and stability.
@@ -105,5 +107,18 @@ R<sub>ss</sub>=0.4V/1.22mA = 0.327k ohms
 Here we are getting a gain(A<sub>v</sub>) of -18.3dB.
 
 ## Circuit 2:
+
+### Circuit Diagram:
+![Image](https://github.com/user-attachments/assets/200d07fe-0659-446e-ae0a-b839f277eec9)
+
+Here we have replaced the current source resistor by a independent current source with a DC value of 1.22mA.<br/>
+The resistor is replaced by a current source beacuse it improves performance of the differential amplifier by increasing gain, enhancing linearity, and boosting the common-mode rejection ratio (CMRR). 
+
+## DC Analysis:
+
+### Steps to Perform DC Analysis in LTspice XVII:
+
+
+
 
 
