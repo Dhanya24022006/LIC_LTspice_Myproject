@@ -183,6 +183,7 @@ Therefore,I<sub>ref</sub>=0.185mA.<br>
 To obtain the current value according to the given ratio, the provided values of W/L for M1 is 6um/180nm , M2 is 6um/180nm, and M3 is 3um/180nm.<br>
 Vin is selected in such a way that it should be in saturation region so the given Vin is 0.763V.<br>
 
+![Image](https://github.com/user-attachments/assets/d6b1ba32-0f98-43f5-b57a-8624733312e1)
 
 
 
