@@ -4,9 +4,9 @@
 ## Aim:
  Design and Analyze Current mirror circuit as active load in amplifier circuit.
 **Given** :
-Vdd=1.8V.<br>
-P<=1mW. <br>
-Av>-10V/V.<br>
+- Power Supply (V<sub>DD</sub>) = 1.8V.
+- Power Consumption (P) <= 1mW. 
+- Gain (A<sub>v</sub>) > -10V/V.
 
 ### Perform
 - DC Ananlysis
@@ -33,6 +33,28 @@ In this specific configuration, the two PMOS transistors are used to create a cu
 ## Circuit Diagram
 
 ![Image](https://github.com/user-attachments/assets/f5bd39e0-d8e9-46bd-954a-145ff21f8ad8)
+
+- Input bias Voltages(V<sub>2</sub> and V<sub>3</sub>= 0.95V): A DC current that flows into or out of the amplifier's input pins to establish a defined operating point, ensuring proper amplification and preventing saturation. 
+- Power Supply(V<sub>1</sub>=1.8V): Provides the necessary DC voltage levels (positive and negative) to bias the MOSFETs, enabling them to operate in the desired amplification region and ensuring proper signal amplification and stability.
+- Output Nodes(V<sub>out1</sub>): The output is taken from this terminal.
+- PMOS(M2,M3) and NMOS(M1): NMOS typically acting as a current sink (drawing current towards ground) and PMOS acting as a current source (supplying current from the positive supply). 
+- Current source (I<sub>ref</sub>): The current source's role is to provide a stable and well-defined reference current
+
+Calculations:<br>
+I<sub>t</sub>=P/V<sub>DD</sub>.<br>
+I<sub>t</sub>=I<sub>ref</sub>+I<sub>x</sub>.<br>
+
+## DC Analysis(1:1)
+As we know I<sub>t</sub>=I<sub>ref</sub>+I<sub>x</sub><br>
+Therefore, for 1:1 ratio I<sub>ref</sub>=Ix<sub>x</sub>br>
+So,I<sub>ref</sub>=I<sub>t</sub>/2<br>
+I<sub>t</sub>=P/V<sub>DD</sub><br>
+I<sub>t</sub>=1mW/1.8V<br>
+I<sub>t</sub>=0.555mA.<br>
+Therefore,I<sub>ref</sub>=0.2778mA.<br>
+
+To obtain the current value according to the given ratio, the provided values of W/L for M1 is 3um/180nm , M2 is 3um/180nm, and M3 is 3um/180nm.<br>
+Vin is selected in such a way that it should be in saturation region so the given Vin is 0.838V.<br>
 
 
 
