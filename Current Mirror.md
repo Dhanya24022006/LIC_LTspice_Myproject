@@ -203,6 +203,46 @@ OUTPUT:
 7. Click **OK**, and place the generated command on the schematic.
 8. Verify the response and note the phase shift and signal gain.
 
+![Image](https://github.com/user-attachments/assets/73700227-f1c9-4959-9f7b-451a2113ce76)
+
+INPUT:
+
+![Image](https://github.com/user-attachments/assets/482b6bc0-1a1a-4115-959f-76b6a4cb1d22)
+
+OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/a13ee9d1-08a3-441e-9a23-c97182fb14e6)
+
+The Expected gain of the circuit is -10V/V.But the obtained gain from the transient analysis is -11.36V/V.
+
+
+## AC Analysis
+
+### Steps to Perform AC Analysis in LTspice XVII:
+
+1. Go to Simulate > Edit Simulation Cmd.
+2. In the AC Analysis tab, choose Decade as the sweep type.
+3. Specify the number of points per decade and set the frequency range from 0.1Hz to 1THz.
+4. Click OK and place the generated command on the schematic.
+5. Ensure that the input voltage source has an AC amplitude of 1V.
+6. Click the Run button to start the analysis.
+7. Examine the gain and phase plots.
+8. Determine key characteristics such as bandwidth and gain margin.
+
+
+
+
+The Expected gain in db of the circuit is 21.34db.But the obtained gain from the AC analysis(frequency response) is 24.55db.
+
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 21.34dB      | 24.55dB         |
+|Av(in V/V)     | 10           | 11.36          |
+
+**3db Bandwidth:**
+
+The obatined 3db B.W=1.173GHz.
+
 
 
 
