@@ -45,6 +45,18 @@ I<sub>t</sub>=P/V<sub>DD</sub>.<br>
 I<sub>t</sub>=I<sub>ref</sub>+I<sub>x</sub>.<br>
 
 ## DC Analysis(1:1)
+
+### Steps to Perform DC Analysis in LTspice XVII:
+1. Build the circuit as per the diagram shown above and set the values of the voltage sources,resistors as per the calculated values.
+2. Next go to **SPICE Directive** and type **.lib filename.lib or .lib filepath.lib** to import the Library file.
+3. Click **OK**, and place the generated command on the schematic.
+4. After importing the library file name the two mosfet as CMOSN.
+5. Set the channel length value of M<sub>1</sub> as 180nm and  we have to vary the value of the width to get a desired value of I<sub>D</sub> and V<sub>out</sub>
+6. Repeat the same steps with M<sub>2</sub> mosfet.
+7. Now go to **Edit simulation command** and select **DC op pnt**.
+8. Click **OK**, and place the generated command on the schematic.
+9. Next click on run button, you will get a pop up window which gives us information about operating point.It includes the values of V<sub>out</sub> and I<sub>D</sub>.
+
 As we know I<sub>t</sub>=I<sub>ref</sub>+I<sub>x</sub><br>
 Therefore, for 1:1 ratio I<sub>ref</sub>=Ix<sub>x</sub>br>
 So,I<sub>ref</sub>=I<sub>t</sub>/2<br>
