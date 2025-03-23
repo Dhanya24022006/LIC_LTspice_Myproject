@@ -243,9 +243,37 @@ The Expected gain in db of the circuit is 21.34db.But the obtained gain from the
 
 **3db Bandwidth:**
 
-The obatined 3db B.W=1.173GHz.
+The obatined 3db B.W=1.186GHz.
 
-  
+![Image](https://github.com/user-attachments/assets/60a9df80-3b1b-41b5-b14f-8215f75df050)
+
+### **Comparison Table:**
+| **Parameter**  | **Mirror Ratio 1:1** (Theory) | **Mirror Ratio 1:1** (Practical) | **Mirror Ratio 1:2** (Theory) | **Mirror Ratio 1:2** (Practical) |
+|---------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+| Av (in dB)    | 20 dB                        | 22.117 dB                     | 21.34 dB                     | 24.55 dB                     |
+| Av (in V/V)   | 10                           | 10.12                          | 10                           | 11.36                         |
+| 3 dB Bandwidth | -                            | 2.253 GHz                     | -                            | 1.186 GHz                     |  
+
+
+## Inference:
+
+- The implemented current mirror circuit accurately replicates the reference current with minimal deviation, demonstrating effective current mirroring across different W/L ratios.
+
+- When the W/L ratio is varied while maintaining the same proportionality, the drain current (Id) remains nearly constant, confirming the reliability of the mirror circuit.
+
+- The measured amplifier gain is slightly higher than the theoretical prediction for both mirror ratios, likely due to minor mismatches in transistor parameters or simulation-related variations.
+
+- An increase in the mirror ratio from 1:1 to 1:2 results in a higher gain, as anticipated. However, this also leads to a reduction in bandwidth—from 2.253 GHz to 1.186 GHz.
+
+- Overall, the simulation results align closely with theoretical expectations, validating both the circuit design and the simulation methodology.
+
+
+
+## Part B
+
+## Aim:
+Design the differential amplifier using the same design specification as Experiment-3. Perform DC analysis,trasient and AC analysis.
+
 
 
 
