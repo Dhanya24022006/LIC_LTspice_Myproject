@@ -183,7 +183,27 @@ Therefore,I<sub>ref</sub>=0.185mA.<br>
 To obtain the current value according to the given ratio, the provided values of W/L for M1 is 6um/180nm , M2 is 6um/180nm, and M3 is 3um/180nm.<br>
 Vin is selected in such a way that it should be in saturation region so the given Vin is 0.763V.<br>
 
+![Image](https://github.com/user-attachments/assets/792237e5-ca5c-4a18-938d-8cf86e65bf7f)
+
+OUTPUT:
+
 ![Image](https://github.com/user-attachments/assets/d6b1ba32-0f98-43f5-b57a-8624733312e1)
+
+## Transient Analysis
+
+### Steps to Perform Transient Analysis in LTspice XVII
+1. After setting the operating point, we will give sine wave as the input for both the gate terminals of the mosfet.
+2. Next set the **Amplitude** as 50mV and **Frequency** as 1kHz for both V<sub>2</sub> and V<sub>3</sub>.
+3. You should specify the AC amplitude for each voltage source separately. You have two voltage sources, you can set their AC amplitudes as follows:
+ - First Voltage Source(V<sub>2</sub>): **AC amplitude** = 1
+ - Second Voltage Source(V<sub>3</sub>): **AC amplitude** = -1
+4. Next set **phi[deg]** for V<sub>3</sub> as 180.
+5. Now go to **Edit Simulation cmd** and select **Transient**.
+6. Give **stop time** as per your convenience, here it is 5m.
+7. Click **OK**, and place the generated command on the schematic.
+8. Verify the response and note the phase shift and signal gain.
+
+
 
 
 
