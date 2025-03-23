@@ -151,8 +151,22 @@ The Expected gain of the circuit is -10V/V.But the obtained gain from the transi
 7. Examine the gain and phase plots.
 8. Determine key characteristics such as bandwidth and gain margin.
 
+![Image](https://github.com/user-attachments/assets/636e9b0b-5769-4497-b82a-003412e191f3)
+
+ OUTPUT:
  
 ![Image](https://github.com/user-attachments/assets/34f2279c-0fd6-4b1c-90f6-f3d95a0443d6)
+
+The Expected gain in db of the circuit is 20db.But the obtained gain from the AC analysis(frequency response) is 22.117db.
+
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 20dB         | 22.117dB         |
+|Av(in V/V)     | 10           | 10.12            |
+
+**3db Bandwidth:**
+
+The obatined 3db B.W=1.173GHz.
 
 
 
