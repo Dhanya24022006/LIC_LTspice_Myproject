@@ -245,7 +245,7 @@ The Expected gain in db of the circuit is 21.34db.But the obtained gain from the
 
 The obatined 3db B.W=1.173GHz.
 
- 
+  
 
 
 
