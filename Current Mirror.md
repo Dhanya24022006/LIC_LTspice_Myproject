@@ -113,6 +113,18 @@ Therefore for L=1um the w=16.667um.
 
 ## Transient Analysis
 
+### Steps to Perform Transient Analysis in LTspice XVII
+1. After setting the operating point, we will give sine wave as the input for both the gate terminals of the mosfet.
+2. Next set the **Amplitude** as 50mV and **Frequency** as 1kHz for both V<sub>2</sub> and V<sub>3</sub>.
+3. You should specify the AC amplitude for each voltage source separately. You have two voltage sources, you can set their AC amplitudes as follows:
+ - First Voltage Source(V<sub>2</sub>): **AC amplitude** = 1
+ - Second Voltage Source(V<sub>3</sub>): **AC amplitude** = -1
+4. Next set **phi[deg]** for V<sub>3</sub> as 180.
+5. Now go to **Edit Simulation cmd** and select **Transient**.
+6. Give **stop time** as per your convenience, here it is 5m.
+7. Click **OK**, and place the generated command on the schematic.
+8. Verify the response and note the phase shift and signal gain.
+
 
 
 
