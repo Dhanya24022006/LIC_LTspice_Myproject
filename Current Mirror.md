@@ -140,6 +140,18 @@ The Expected gain of the circuit is -10V/V.But the obtained gain from the transi
 
 ## AC Analysis
 
+### Steps to Perform AC Analysis in LTspice XVII:
+
+1. Go to Simulate > Edit Simulation Cmd.
+2. In the AC Analysis tab, choose Decade as the sweep type.
+3. Specify the number of points per decade and set the frequency range from 0.1Hz to 1THz.
+4. Click OK and place the generated command on the schematic.
+5. Ensure that the input voltage source has an AC amplitude of 1V.
+6. Click the Run button to start the analysis.
+7. Examine the gain and phase plots.
+8. Determine key characteristics such as bandwidth and gain margin.
+
+
 
 
 
