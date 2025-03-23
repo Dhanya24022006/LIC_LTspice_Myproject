@@ -230,7 +230,9 @@ The Expected gain of the circuit is -10V/V.But the obtained gain from the transi
 8. Determine key characteristics such as bandwidth and gain margin.
 
 
+![Image](https://github.com/user-attachments/assets/9cd5cb62-1b5b-4c7b-858b-704d2a5a957e)
 
+ 
 
 The Expected gain in db of the circuit is 21.34db.But the obtained gain from the AC analysis(frequency response) is 24.55db.
 
@@ -243,7 +245,7 @@ The Expected gain in db of the circuit is 21.34db.But the obtained gain from the
 
 The obatined 3db B.W=1.173GHz.
 
-
+ 
 
 
 
