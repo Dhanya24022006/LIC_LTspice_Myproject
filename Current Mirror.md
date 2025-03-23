@@ -151,6 +151,8 @@ The Expected gain of the circuit is -10V/V.But the obtained gain from the transi
 7. Examine the gain and phase plots.
 8. Determine key characteristics such as bandwidth and gain margin.
 
+ 
+![Image](https://github.com/user-attachments/assets/34f2279c-0fd6-4b1c-90f6-f3d95a0443d6)
 
 
 
