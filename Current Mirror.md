@@ -166,7 +166,23 @@ The Expected gain in db of the circuit is 20db.But the obtained gain from the AC
 
 **3db Bandwidth:**
 
-The obatined 3db B.W=1.173GHz.
+The obatined 3db B.W=2.253GHz.
+
+![Image](https://github.com/user-attachments/assets/4c9f54bb-8fcd-49f3-8c97-8d90e143613e)
+
+## DC Analysis:(for mirror ratio 1:2)
+
+As we know I<sub>t</sub>=I<sub>ref</sub>+I<sub>x</sub><br>
+Therefore, for 1:2 ratio 2*I<sub>ref</sub>=I<sub>x</sub><br>
+So,I<sub>ref</sub>=I<sub>t</sub>/3<br>
+I<sub>t</sub>=P/V<sub>DD</sub<br>
+I<sub>t</sub>=1mW/1.8V<br>
+I<sub>t</sub>=0.555mA.<br>
+Therefore,I<sub>ref</sub>=0.185mA.<br>
+
+To obtain the current value according to the given ratio, the provided values of W/L for M1 is 6um/180nm , M2 is 6um/180nm, and M3 is 3um/180nm.<br>
+Vin is selected in such a way that it should be in saturation region so the given Vin is 0.763V.<br>
+
 
 
 
