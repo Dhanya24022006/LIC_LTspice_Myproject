@@ -32,6 +32,7 @@ In this specific configuration, the two PMOS transistors are used to create a cu
 
 ## Circuit Diagram
 
+![Image](https://github.com/user-attachments/assets/f5bd39e0-d8e9-46bd-954a-145ff21f8ad8)
 
 
 
