@@ -126,6 +126,22 @@ Therefore for L=1um the w=16.667um.
 8. Verify the response and note the phase shift and signal gain.
 
 
+![Image](https://github.com/user-attachments/assets/4a440a69-f0b9-46cb-ab46-74ac451959a9)
+
+INPUT:
+
+![Image](https://github.com/user-attachments/assets/c62f9169-72ab-4ef2-843d-e601be447097)
+
+OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/6041cebc-b8d6-4d4c-9611-35583355ceef)
+
+The Expected gain of the circuit is -10V/V.But the obtained gain from the transient analysis is -10.12V/V.
+
+## AC Analysis
+
+
+
 
 
 
