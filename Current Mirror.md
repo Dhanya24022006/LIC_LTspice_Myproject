@@ -302,8 +302,22 @@ To preserve consistency with Experiment 3, the circuit must maintain the same DC
 
 - Repeat the same steps as mentioned in the above section.
 
+Circuit Diagram:
+
+![Image](https://github.com/user-attachments/assets/d9721172-90ac-4507-80cb-f209b5f9fdb8)
 
 
+INPUT:
+
+![Image](https://github.com/user-attachments/assets/d29de8c7-91f6-471f-8afc-b95161aa0ed0)
+
+OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/fcf711dc-4d72-4097-9948-bab749e0348f)
+
+The Expected gain of the circuit is -8.6V/V.But the obtained gain from the transient analysis is -13.979V/V.
+
+## AC Analysis
 
 
 
