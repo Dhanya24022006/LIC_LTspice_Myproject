@@ -323,22 +323,34 @@ The Expected gain of the circuit is -8.6V/V.But the obtained gain from the trans
 
 Circuit Diagram:
 
+![Image](https://github.com/user-attachments/assets/1bfcd546-2f16-4a24-a6f2-53143182cb63)
 
 
-
-The Expected gain in db of the circuit is 22.72db.But the obtained gain from the AC analysis(frequency response) is 24.6db.
+The Expected gain in db of the circuit is 22.72db.But the obtained gain from the AC analysis(frequency response) is 23.46db.
 
 |Parameter      |Theory value  | Practical value |
 |---------------|--------------|-----------------|
-|Av(in dB)      | 21.34dB      | 24.6dB          |
-|Av(in V/V)     | 8.6          | 13.68            |
+|Av(in dB)      | 21.34dB      | 23.46dB          |
+|Av(in V/V)     | 8.6          | 13.979           |
+
+![Image](https://github.com/user-attachments/assets/f399a75e-d2e7-4f46-930b-c552aec7adb2)
 
 
 
 **3db Bandwidth:**
 
-The obatined 3db B.W=406.16MHz.
- 
+The obatined 3db B.W=400.0834MHz.
+
+ ![Image](https://github.com/user-attachments/assets/e4acc891-9d80-4cc1-9dfb-543e7616c284)
+
+
+## Inference
+
+- The observed gain, which exceeds expected values, may be attributed to additional gain contributions arising from parasitic effects or mismatches between devices.
+
+- The measured high bandwidth of 406.16 MHz indicates that the amplifier is well-suited for high-frequency applications.
+
+- Moreover, the deviation in gain could also result from an underestimation of the drain resistance or variations in transconductance across the devices.
 
 
 
