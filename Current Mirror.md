@@ -319,10 +319,25 @@ The Expected gain of the circuit is -8.6V/V.But the obtained gain from the trans
 
 ## AC Analysis
 
+- Repeat the same steps as mentioned in the above section.
+
+Circuit Diagram:
 
 
 
 
+The Expected gain in db of the circuit is 22.72db.But the obtained gain from the AC analysis(frequency response) is 24.6db.
+
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 21.34dB      | 24.6dB          |
+|Av(in V/V)     | 8.6          | 13.68            |
+
+
+
+**3db Bandwidth:**
+
+The obatined 3db B.W=406.16MHz.
  
 
 
