@@ -274,6 +274,10 @@ The obatined 3db B.W=1.186GHz.
 ## Aim:
 Design the differential amplifier using the same design specification as Experiment-3. Perform DC analysis,trasient and AC analysis.
 
+## DC Analysis
+
+
+
 
 
 
