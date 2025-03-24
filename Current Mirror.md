@@ -276,6 +276,33 @@ Design the differential amplifier using the same design specification as Experim
 
 ## DC Analysis
 
+- Repeat the same steps as mentioned in the above section.
+
+![Image](https://github.com/user-attachments/assets/8ef76f51-e4b2-469e-b4ed-2fa01ff3582b)
+
+Here’s a well-structured explanation of the DC Analysis for your circuit while ensuring that all MOSFETs operate in the saturation region and match the experimental results.
+
+1. Circuit Overview
+
+The circuit comprises six MOSFETs (labeled M1 through M6), each with specified (W/L) ratios. It is essential to ensure that all transistors operate in the saturation region throughout the analysis for accurate performance. The given width-to-length ratios for the transistors are as follows:
+
+- M1: 108 μm / 180 nm
+- M2: 108 μm / 180 nm
+- M4: 108 μm / 180 nm
+- M3: 49.1 μm / 180 nm
+- M5: 57.33 μm / 180 nm
+- M6: 57.33 μm / 180 nm
+
+To preserve consistency with Experiment 3, the circuit must maintain the same DC operating point, which includes both the current levels and node voltages. Accordingly, the biasing conditions are selected to match those of the previous experiment.
+
+![Image](https://github.com/user-attachments/assets/2cceda88-b45c-4953-82ef-5f89d74089e1)
+
+
+## Transient Analysis
+
+- Repeat the same steps as mentioned in the above section.
+
+
 
 
 
